@@ -6,3 +6,25 @@
 .reveal h6 {
 	text-transform: none;
 }
+
+.copyright {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.col2 {
+	display: flex;
+	text-align: left;
+	font-size: 0.6em;
+	line-height: 1.2em;
+	padding: 0 2rem;
+}
+
+.col2 > div {
+	flex: 1 1 50%;
+}
