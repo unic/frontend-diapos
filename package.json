@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Weekly presentations from the Frontend cluster of Zürich",
   "scripts": {
-    "start": "reveal-md ./decks/*.md -w ",
+    "start": "reveal-md ./decks/ -w",
     "build": "rm -rf ./build && reveal-md ./decks/ --static build",
     "serve:static": "serve ./build/"
   },
