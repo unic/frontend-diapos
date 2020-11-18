@@ -1,7 +1,7 @@
 {
   "name": "dev.fe.zrh.unic-weekly-presentations",
   "version": "1.0.0",
-  "description": "Weekly presentations from the Frontend cluster of Zürich",
+  "description": "Presentations from our Frontend weeklies",
   "scripts": {
     "start": "reveal-md ./decks/ -w",
     "build": "rm -rf ./build && reveal-md ./decks/ --static build",
