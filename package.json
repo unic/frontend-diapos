@@ -1,0 +1,26 @@
+{
+  "name": "dev.fe.zrh.unic-weekly-presentations",
+  "version": "1.0.0",
+  "description": "Weekly presentations from the Frontend cluster of Zürich",
+  "scripts": {
+    "start": "reveal-md ./decks/*.md -w ",
+    "build": "rm -rf ./build && reveal-md ./decks/ --static build",
+    "serve:static": "serve ./build/"
+  },
+  "keywords": [
+    "unic",
+    "frontend",
+    "markdown",
+    "revealjs",
+    "reveal.js",
+    "reveal-md",
+    "slides",
+    "presentations"
+  ],
+  "author": "Oriol Torrent Florensa",
+  "license": "MIT",
+  "dependencies": {
+    "reveal-md": "4.1.7",
+    "serve": "11.3.2"
+  }
+}
