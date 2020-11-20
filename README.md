@@ -10,6 +10,14 @@ The system is thouhgt to focus on the content creation, for which markdown files
 2. Add a [YAML Front matter](https://github.com/webpro/reveal-md#yaml-front-matter) at the beginning from your file
 3. `npm run start`
 
+To add local images, media, etc. to your presentation, add them in a folder with the dat of your presentation in `./decks/assets/`.
+For instance: given that your presentation md file is for `23.11.2020`, then your local assets should land in `./decks/assets/20201123/`.
+Then you can reference your media in your md file like:
+
+```md
+![Alt text description](assets/20201123/description.png)
+```
+
 Happy writting! 😁
 
 ## Tech stack
