@@ -253,6 +253,7 @@ In my current Project I mocked the s**t out of Jest and gained most of my knowle
 
 ### Sources:
 
-* https://medium.com/@ericdcobb/advanced-react-component-mocks-with-jest-and-react-testing-library-f1ae8838400b
-* https://jestjs.io/docs/en/manual-mocks
+* [Advanced React Component Mocks with Jest and React Testing Library](https://medium.com/@ericdcobb/advanced-react-component-mocks-with-jest-and-react-testing-library-f1ae8838400b)
+* [Jest Docs - Manual Mock](https://jestjs.io/docs/en/manual-mocks)
+* [Mocking Axios in Jest + Testing Async Functions](https://www.youtube.com/watch?v=9Yrd4aZkse8)
 * Atupri Repo ;)
