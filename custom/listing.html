@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Unic Frontend-Diapos</title>
+		<link rel="stylesheet" href="{{{themeUrl}}}" id="theme" />
+		<style>
+			body {
+				background: #191919;
+                font-family: "Source Sans Pro", Helvetica, sans-serif;
+				color: #fff;
+				padding: 0 20px;
+			}
+
+			header {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+            }
+
+			h1,
+			h2 {
+				margin: 0;
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				border: 1px solid #fff;
+				border-radius: 4px;
+                color: #fff;
+				text-decoration: none;
+				padding: 15px;
+				transition: all 0.5s ease;
+			}
+
+			a:hover {
+                box-shadow: 4px 4px 0 #fff;
+			}
+
+			.pageWrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+			}
+
+			.logo {
+				background: #a4c400;
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				margin: 20px 20px 20px 0;
+			}
+
+			.titleWrapper {
+				flex: 1 1 80%
+			}
+
+			.listingWrapper {
+				display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				grid-gap: 20px;
+				margin-top: 40px;
+			}
+
+            .listingWrapper br {
+                display: none;
+            }
+		</style>
+	</head>
+
+	<body>
+		<div class="pageWrapper">
+			<header>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="-245.3 406.7 56.6 26.6" class="logo" fill="#fff">
+					<path d="M-210.4 411.1c.3.2.6.3 1 .3.6 0 1.2-.2 1.6-.7.4-.5.6-1.1.6-1.7 0-.6-.2-1.1-.6-1.5l-.4-.4h-.1c-.3-.2-.7-.3-1.1-.3-.6 0-1.1.2-1.5.7-.4.5-.6 1-.6 1.7 0 .6.2 1.1.6 1.6.1.1.3.2.5.3"></path>
+					<path d="M-204.9 431.7c-.9 0-2-.3-2.3-1.2-.1-.2-.1-.4-.1-.7v-14.1l-.2-.2c-1 .2-2.3.4-3.9.5h-2.1v1.2c1.5 0 2.9.2 3.1 1.7V429.8c0 1.5-1.3 1.9-2.5 1.9s-2.5-.4-2.5-1.9V421c0-1.7-.4-3-1.2-4.1-.8-1-2.2-1.5-3.9-1.5-2 0-4.1.4-5.9 1.9-.4.4-.8.7-1 1h-.1v-2.4l-.2-.2-5.4.4v1.1c1.1 0 2.4.4 2.5 1.7v9.7c-.1.2-.3.5-.5.7-1.2 1.3-3.9 2.3-5.5 2.1-.8-.1-1.4-.3-2-.9-.5-.6-.8-1.5-.8-2.8v-11.8l-.3-.2-5.4.4v1.1c1.1 0 2.3.3 2.5 1.7v8.7c0 1.9.4 3.3 1.2 4.3.8 1 2 1.5 3.6 1.5 3.4.1 5-.9 6.3-1.9.4-.3.7-.6.9-.9h.1s0 2.3 2.5 2.3h3.1v-1.1c-1 0-2.2-.3-2.4-1.4 0-.1-.1-.3-.1-.5v-9.3s.1-.4.9-1.2c1.4-1.2 3-1.9 4.5-1.9 1.2 0 2 .3 2.5 1 .6.7.9 1.6.9 2.8v8.6c0 1.5-1.3 1.9-2.5 1.9v1.1h16.3l-.1-1.2"></path>
+					<path d="M-190.1 428.4c-.6.9-1.2 1.6-1.9 2.1s-1.7.8-2.8.8c-.8 0-1.5-.2-2.1-.5-.6-.3-1.2-.8-1.6-1.5-.9-1.3-1.4-3.1-1.4-5.2 0-1.4.1-2.5.4-3.5.3-1 .6-1.8 1-2.3 1-1.3 2.1-1.7 3.3-1.7 1 0 1.6.3 2 .6-.1.2-.2.5-.3.8-.1.5.1 1 .4 1.4.3.4.7.6 1.2.7.2 0 .4.1.5 0 .3 0 .6-.1.8-.3.4-.3.6-.7.7-1.2.1-.5-.1-1-.4-1.4l-.1-.1c-.2-.2-.4-.4-.6-.5-.1-.1-.3-.2-.4-.3-1-.6-2.2-.9-3.8-.9-1.4 0-2.6.2-3.6.7-1 .5-1.9 1.2-2.5 2-.7.8-1.3 1.8-1.6 2.8-.4 1-.6 2.2-.6 3.3 0 2.7.7 4.9 2.1 6.6.5.6 1.1 1.1 1.8 1.5 1.1.6 2.4 1 4 1 1.3 0 2.6-.4 3.8-1.2 1.2-.8 2.2-1.8 3-3.2l.2-.3-1.5-.2"></path>
+				</svg>
+				<div class="titleWrapper">
+					<h1>Unic Frontend Diapos</h1>
+					<h2>Presentations from our Frontend weeklies</h2>
+				</div>
+			</header>
+			<div class="listingWrapper">
+				{{{listing}}}
+			</div>
+		</div>
+	</body>
+</html>

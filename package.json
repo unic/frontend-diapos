@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Presentations from our Frontend weeklies",
   "scripts": {
-    "start": "reveal-md ./decks/ -w",
+    "start": "reveal-md ./decks/ -w --listing-template ./custom/listing.html",
     "build": "rm -rf ./build && reveal-md ./decks/ --static build --static-dirs=assets",
     "serve:static": "serve ./build/"
   },
