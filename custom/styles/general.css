@@ -28,3 +28,13 @@
 .col2 > div {
 	flex: 1 1 50%;
 }
+
+.reveal code {
+	color: #bf79db;
+}
+
+.reveal pre {
+	width: auto;
+	font-size: 18px;
+	box-shadow: none;
+}
