@@ -57,11 +57,9 @@
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 				grid-gap: 20px;
-				margin-top: 40px;
-			}
-
-			.listingWrapper br {
-				display: none;
+				list-style: none;
+				padding-left: 0;
+				margin: 40px 0 0;
 			}
 		</style>
 	</head>
@@ -83,7 +81,17 @@
 					<h2>Presentations from our Frontend weeklies</h2>
 				</div>
 			</header>
-			<div class="listingWrapper">{{{listing}}}</div>
+			<ul class="listingWrapper">
+				{{#files}}
+				<li>
+					<a href="{{filePath}}" title="{{title}}">
+						{{#title}}{{.}}
+						<br />
+						({{filePath}}){{/title}}{{^title}}{{filePath}}{{/title}}
+					</a>
+				</li>
+				{{/files}}
+			</ul>
 		</div>
 	</body>
 </html>
