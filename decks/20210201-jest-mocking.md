@@ -1,5 +1,5 @@
 ---
-title: Mocking Jest
+title: Jest Mocking
 date: 01.02.2021
 author: Manuel Lieb
 description: How to mock modules in your unit tests
@@ -11,7 +11,7 @@ template: ./custom/templates/general.html
 highlightTheme: monokai
 ---
 
-## Mocking Jest
+## Jest Mocking
 
 How to mock modules in your unit tests
 
