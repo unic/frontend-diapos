@@ -28,3 +28,23 @@
 .col2 > div {
 	flex: 1 1 50%;
 }
+
+.reveal code {
+	color: #bf79db;
+}
+
+.reveal pre {
+	width: auto;
+	font-size: 18px;
+	box-shadow: none;
+}
+
+.reveal pre + .filename {
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: -15px;
+	color: grey;
+	font-style: italic;
+}
+
+
