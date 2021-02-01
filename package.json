@@ -20,7 +20,7 @@
   "author": "Oriol Torrent Florensa",
   "license": "MIT",
   "dependencies": {
-    "reveal-md": "4.1.7",
+    "reveal-md": "5.0.0",
     "serve": "11.3.2"
   }
 }
