@@ -1,13 +1,14 @@
+# WebStorm
 .idea/
-.history/
-*.iml
-*.iws
-*.eml
-out/
-.DS_Store
-.svn
-log/*.log
-tmp/**
+
+# React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
 node_modules/
-.sass-cache
-dist/*.map
+
+# Build
+build/

@@ -4,7 +4,7 @@
   "description": "Presentations from our Frontend weeklies",
   "scripts": {
     "start": "reveal-md ./decks/ -w",
-    "build": "rm -rf ./build && reveal-md ./decks/ --static build --static-dirs=assets",
+    "build": "rm -rf ./build && reveal-md ./decks/ --static build --static-dirs=./decks/assets",
     "serve:static": "serve ./build/"
   },
   "keywords": [
