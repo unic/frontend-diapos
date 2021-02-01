@@ -233,11 +233,11 @@ Globally mocking `axios` in Jest will result in the following:
 
 ### Recap
 
-Mocking in Jest is quite "simple" & will make your Dev-Life much easier
+-<!-- .element: class="fragment" --> Mocking in Jest is easily achievable & will make your Dev-Life much easier
 
-By relying on static data / code you spend less time writing tests and can use the gained time to do other (nicer) things - like learning (~~fighting~~) Typescript 😂
+-<!-- .element: class="fragment" --> By relying on static data / code you spend less time writing tests and can use the gained time to do other (nicer) things - like learning (~~fighting~~) Typescript 😂
 
-In my current Project I mocked the s**t out of Jest and gained most of my knowledge #bigfan
+-<!-- .element: class="fragment" --> In my current Project I mocked the s**t out of Jest and gained most of my knowledge #bigfan
 
 ---
 
