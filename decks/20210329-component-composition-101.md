@@ -118,13 +118,14 @@ Note: in Vue / Svelte you can give Slots a name
 
 #### Component
 
-```jsx[1-11]
+```jsx[1-12]
 const NewsDetail = ({ children, author, comments }: NewsDetailProps) => {
    const [newsId, setNewsId] = useState<number>(123)
+   const [authorId, setAuthorId] = useState<number>(123)
 
    return (
       <>
-         {author(id)}
+         {author(authorId)}
          {children}
          {comments(newsId)}
       </>
@@ -142,7 +143,7 @@ type NewsDetailProps = {
 
 ```jsx
 <NewsDetail
-  author={(id) => <Author id={id} />}
+  author={(authorId) => <Author id={authorId} />}
   comments={(newsId) => <Comments id={newsId} />}
 >
   Add News Text here
@@ -155,7 +156,7 @@ type NewsDetailProps = {
 
 Instead of passing a function - you can also directly pass a Component - to render.
 
-This is recommended, if you don't need to rely on any data from the parent Component.
+This is pretty handy, if you don't need to rely on any data from the parent Component.
 
    ---
 
@@ -177,30 +178,47 @@ type InputProps = {
 }
 ```
 
-#### Usage
+---
 
-```jsx
-<Input
-  type="text"
-  name="password"
-  placeholder="Please Enter Password"
-  inputRightIcon={<Icon name="lock" />}
-/>
+### Bonus: Typescript Magic ✨
+
+Allow passing a Component or Function in the same Component
+
+```tsx
+const Switch = ({ children }: SwitchProps) => {
+	const [isActive, setIsActive] = useState<boolean>(false);
+
+	return isFunction(children) ? children(isActive) : children;
+};
+
+type MaybeRenderProp = ReactNode | FunctionComponent<P>;
+
+type SwitchChildProps = {
+	isActive: boolean;
+}
+
+type SwitchProps = {
+	children?: FunctionComponent<SwitchChildProps>
+}
+
+function isFunction(value: any): value is Function {
+	return typeof value === "function"
+}
 ```
 
 ---
 
 ### Questions?
 
-
+![Next Talk](assets/20210329/questions.gif)
 
 ---
 
-![Next Talk](assets/20210329/next-talk.jpg)
+### Nomination
 
    ---
 
-### Nomination
+![Next Talk](assets/20210329/next-talk.jpg)
 
 ---
 
