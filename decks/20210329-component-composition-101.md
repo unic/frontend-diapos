@@ -22,7 +22,7 @@ The Art of Nesting
 - Prevents (excessive) Prop-Drilling
 - Makes your code more readable / extensible
 - Improves re-usability of Components
-- (Enables customisation inside your Components)
+- Enables customisable placements inside your Components
 
 Notes:
 Can be an alternative to Context, depending on the Use-Case
@@ -56,9 +56,9 @@ Note: in Vue / Svelte the default children Prop is <slot />
 
 ---
 
-### Advanced Composition (Patterns)
+### Advanced Composition (-Patterns)
 
-Your Composition can be enhanced in various ways ...
+Your Composition can be enhanced using:
 
 - Functions as Child Component (FaCC)
 - renderProps
@@ -68,9 +68,9 @@ Your Composition can be enhanced in various ways ...
 
 ### Functions as Child Component (FaCC)
 
-Same pattern as using `children` - but instead of a Component (or any other JSX Markup) you pass a function.
+Same pattern as using `children` - but instead of a Component you pass a function.
 
-Inside the Component the function is called and optionally return the defined values.
+Inside the Component you call the `children()` function and optionally return the defined values.
 
 Note: using FaCCs is the easiest but also most controversial Composition Pattern
 
@@ -118,23 +118,21 @@ Note: in Vue / Svelte you can give Slots a name
 
 #### Component
 
-```jsx[1-12]
-const NewsDetail = ({ children, author, comments }: NewsDetailProps) => {
-   const [newsId, setNewsId] = useState<number>(123)
-   const [authorId, setAuthorId] = useState<number>(123)
+```jsx[1-11]
+const NewsDetail = ({ id, author, comments }: NewsDetailProps) => {
+   const [authorId, setAuthorId] = useState<number>(1)
 
    return (
       <>
          {author(authorId)}
-         {children}
-         {comments(newsId)}
+         // render news content here
+         {comments(id)}
       </>
    );
 };
 
 type NewsDetailProps = {
-	children?: ReactNode;
-	share?: FunctionComponent<ShareProps>
+	author?: FunctionComponent<AuthorProps>
 	comments?: FunctionComponent<CommentsProps>
 }
 ```
@@ -143,11 +141,10 @@ type NewsDetailProps = {
 
 ```jsx
 <NewsDetail
+  id={123}
   author={(authorId) => <Author id={authorId} />}
   comments={(newsId) => <Comments id={newsId} />}
->
-  Add News Text here
-</NewsDetail>
+/>
 ```
 
 ---
@@ -178,9 +175,19 @@ type InputProps = {
 }
 ```
 
+#### Usage
+
+```tsx
+<Input
+  type="text"
+  name="username"
+  inputRightIcon={<Icon name="user" />}
+/>
+```
+
 ---
 
-### Bonus: Typescript Magic ✨
+### Bonus: Some Magic ✨
 
 Allow passing a Component or Function in the same Component
 
