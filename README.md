@@ -28,4 +28,5 @@ Behind the scenes, this is a system based on [reveal-md](https://github.com/webp
 
 ## Next steps
 
-Setup some hooks to build (`npm run build`) the slides and host them somewhere ⛅️
+- Setup some hooks to build (`npm run build`) the slides and host them somewhere ⛅️
+- Port Unic's PWP styles to <<abbr title="frontend">fe</abbr>/diapos>
