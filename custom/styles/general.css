@@ -7,6 +7,27 @@
 	text-transform: none;
 }
 
+.reveal img, .reveal video, .reveal iframe {
+	max-width: 60vh;
+	max-height: 60vh;
+}
+
+.reveal .a-right {
+	text-align: right;
+}
+
+.reveal .slides section section[data-facts] {
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 5px solid;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+.reveal .slides footer {
+	margin-top: 1em;
+	font-size: 1rem;
+}
+
 .copyright {
 	position: absolute;
 	left: 0;
