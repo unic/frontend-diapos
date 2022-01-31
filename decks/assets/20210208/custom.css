@@ -1,0 +1,34 @@
+.reveal img.image--small {
+  max-height: 50vh;
+}
+
+.reveal pre + .filename {
+	padding-bottom: 0.25rem;
+	text-align: left;
+  font-size: 0.6875rem;
+}
+
+.reveal pre + pre {
+	margin-top: 2.5rem;
+}
+
+.copy--large {
+  font-size: 2.625rem;
+}
+
+.copy--medium {
+  font-size: 2rem;
+}
+
+.copy--small {
+  font-size: 1.625rem;
+}
+
+.column-container {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+	padding: 0 1.25rem;
+}

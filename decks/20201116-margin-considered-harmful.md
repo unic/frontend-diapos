@@ -179,4 +179,4 @@ Mark Dalgleish
 
 ## Nomination
 
-![Next Speaker](https://i.imgflip.com/4mjvbr.jpg)
+![Next Speaker](assets/20201116/nomination.jpg)
