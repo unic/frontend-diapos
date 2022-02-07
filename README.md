@@ -18,7 +18,7 @@ Then you can reference your media in your md file like:
 ![Alt text description](assets/20201123/description.png)
 ```
 
-Happy writting! 😁
+Happy writing! 😁
 
 ## Tech stack
 
