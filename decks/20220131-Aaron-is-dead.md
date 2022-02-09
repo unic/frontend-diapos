@@ -25,7 +25,7 @@ revealOptions:
 <br /><br />
 And the events occurred at the beginning of this month inevitably pointed my attention to it again.
 <br /><br />
-Are you aware of <a herf="https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected">what happened</a>?
+Are you aware of <a href="https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected">what happened</a>?
 
 <!--h-->
 
