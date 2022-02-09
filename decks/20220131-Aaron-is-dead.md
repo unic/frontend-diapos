@@ -116,7 +116,7 @@ By the way, the boy in the background image is from the 1st link, talking to Law
 <footer>
 	<a href="https://daringfireball.net/projects/markdown">Daring Fireball's Markdown post</a>
 	<br/>
-	<small>Check the "acknowledgements" section in the bottom of the post</small>
+	<small>Check the "acknowledgements" section at the bottom of the post</small>
 </footer>
 
 <!--n--> In 2004, aged 18, Aaron created markdown with John Gruber, a simple markup language that allows people to write easy-to-write, easy-to-understand formatted text that could later be converted to HTML
