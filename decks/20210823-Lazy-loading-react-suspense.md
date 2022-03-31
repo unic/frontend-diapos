@@ -103,7 +103,7 @@ const App = () => {
 	const { ref, inView } = useInView({
 		threshold: 0.0,
 	})
-	
+
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
 			<div ref={ref}>
@@ -142,7 +142,7 @@ Demo: https://csb-ceovp.netlify.app/
 ## Learnings<!-- .element: data-id="sticky-el-title" -->
 
 - Balance bundle sizes with network requests: network round trip and the latency
-<!-- .element: class="fragment" --> 
+<!-- .element: class="fragment" -->
 
 - We could extract this logic to a wrapper component
 <!-- .element: class="fragment" -->
@@ -151,7 +151,7 @@ Demo: https://csb-ceovp.netlify.app/
   (and inversion of control if you have a wrapper component)
 <!-- .element: class="fragment" -->
 
-- Use skeletons for improved UX and controlled Layout Shifting while loading 
+- Use skeletons for improved UX and controlled Layout Shifting while loading
 <!-- .element: class="fragment" -->
 
 
@@ -166,4 +166,4 @@ Demo: https://csb-ceovp.netlify.app/
 
 <!--h-->
 
-## Happy conding! 😁👩🏻‍💻
+## Happy coding! 😁👩🏻‍💻
