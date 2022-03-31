@@ -303,7 +303,7 @@ For example, group articles by tags:
 
 ```js
 const articles = [
-	{title: 'Sync iteration', tags: ['js', 'iter']}, 
+	{title: 'Sync iteration', tags: ['js', 'iter']},
 	{title: 'Promises', tags: ['js', 'async']},
 	{title: 'Async iteration', tags: ['js', 'async', 'iter']},
 ];
@@ -329,4 +329,4 @@ References:
 Now go and change the world<br />💪🏼🌍👩🏻‍💻
 <!-- .element: class="r-fit-text" -->
 
-Happy conding! 😁👩🏻‍💻
+Happy coding! 😁👩🏻‍💻
