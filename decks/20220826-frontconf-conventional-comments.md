@@ -2,7 +2,7 @@
 title: Conventional Comments for Code Reviews
 date: 26.08.2022
 author: Manuel Lieb
-confName: FrontConference 2022
+confName: Front Conference 2022
 description: How to improve your communication, reduce misunderstandings and make your Reviewer life easier.
 separator: "^\r?\n---\r?\n$"
 verticalSeparator: "^\r?\n   ---\r?\n$"
@@ -46,7 +46,7 @@ Restart the cycle on the next day ...
 
 ### How to use Conventional Comments
 
-Start using a new Format Convention for your comments
+Start using a Format Convention for your comments
 
    ---
 
@@ -56,6 +56,12 @@ Start using a new Format Convention for your comments
 [discussion]
 ```
 <!-- .element: style="font-size: 3rem;" -->
+
+   ---
+
+#### Examples:
+
+![Examples for Conventional Comments](assets/20220826/examples.png)
 
    ---
 
@@ -72,15 +78,10 @@ Start using a new Format Convention for your comments
 ### Decorations:
 - (blocking)
 - (non-blocking)
+- (if-minor)
 - ...
 
    ---
-
-#### Examples:
-
-![Examples for Conventional Comments](assets/20220826/examples.png)
-
----
 
 ### Recap
 
@@ -89,7 +90,7 @@ Conventional Comments:
 <!-- .element: class="fragment" -->
 - help to minimize misunderstandings
 <!-- .element: class="fragment" -->
-- introduces a mental stopper for yourself:<br />How do I Label this comment?
+- introduce a mental stopper for yourself:<br />Wait, how do I label this comment?
 <!-- .element: class="fragment" -->
 
 ---
