@@ -2,7 +2,7 @@
 title: Conventional Comments for Code Reviews
 date: 26.08.2022
 author: Manuel Lieb
-confName: FrontConference
+confName: FrontConference 2022
 description: How to improve your communication, reduce misunderstandings and make your Reviewer life easier.
 separator: "^\r?\n---\r?\n$"
 verticalSeparator: "^\r?\n   ---\r?\n$"
@@ -20,12 +20,15 @@ How to improve your communication, reduce misunderstandings and make your Review
 
 ## Story Time 🔮
 
+https://conventionalcomments.org/ by Paul Slaughter
+<!-- .element: class="fragment" -->
+
 ---
 
-### The Cycle of Feelings in a Code Reviews
+### The Cycle of Feelings in a Code Review
 
-🙂 🤨 😟 😫 😵 🙈 🤦🏻‍♂️
-<!-- .element: style="font-size: 5rem" -->
+🙂 🤨 😟 😫 😵 🤦🏻‍♂️
+<!-- .element: style="font-size: 7.5rem" -->
 
 Restart the cycle on the next day ...
 <!-- .element: class="fragment" -->
@@ -45,24 +48,28 @@ Restart the cycle on the next day ...
 
 Start using a new Format Convention for your comments
 
+   ---
+
 ```
 <label> [decorations]: <subject>
 
 [discussion]
 ```
-<!-- .element: class="fragment" -->
+<!-- .element: style="font-size: 3rem;" -->
 
    ---
 
-#### Labels:
+### Labels:
 - suggestion
 - question
 - nitpick (nit)
+- thought
+- chore
 - ...
 
    ---
 
-#### Decorations:
+### Decorations:
 - (blocking)
 - (non-blocking)
 - ...
@@ -82,11 +89,17 @@ Conventional Comments:
 <!-- .element: class="fragment" -->
 - help to minimize misunderstandings
 <!-- .element: class="fragment" -->
-- introduce a mental stopper for yourself - How do you Label your comment?
+- introduces a mental stopper for yourself:<br />How do I Label this comment?
 <!-- .element: class="fragment" -->
+
+---
+
+## Check it out and see if it works for you and your Team.
 
 ---
 
 ### Thank you
 
-See more here: https://conventionalcomments.org/ and Kudos to Paul Slaughter
+Link: https://conventionalcomments.org/
+
+and Kudos to Paul Slaughter
